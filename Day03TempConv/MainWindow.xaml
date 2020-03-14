@@ -1,0 +1,27 @@
+﻿<Window x:Class="Day03TempConv.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Day03TempConv"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="0*" />
+        </Grid.ColumnDefinitions>
+        <Label x:Name="LabelInput" Content="Input" HorizontalAlignment="Left" Margin="52,0,0,212" VerticalAlignment="Bottom" Height="26" Width="38" />
+        <TextBox x:Name="TextBoxInput" HorizontalAlignment="Left" Height="23" Margin="95,0,0,211" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" Text="0" />
+        <Label x:Name="LabelInputScale" Content="Input Scale" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Height="26" Width="68" />
+        <Label x:Name="LabelOutputScale" Content="Output Scale" HorizontalAlignment="Left" Margin="175,66,0,0" VerticalAlignment="Top" Height="26" Width="78" />
+        <RadioButton x:Name="RadioButtonInputCelcius" Content="Celcius" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" GroupName="InputScale" Checked="RadioButtonInputCelcius_Checked" Height="15" Width="56" />
+        <RadioButton x:Name="RadioButtonInputFahrenheit" Content="Fahrenheit" HorizontalAlignment="Left" Margin="10,137,0,0" VerticalAlignment="Top" GroupName="InputScale" Checked="RadioButtonInputFahrenheit_Checked" Height="15" Width="75" />
+        <RadioButton x:Name="RadioButtonInputKelvin" Content="Kelvin" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" GroupName="InputScale" Checked="RadioButtonInputKelvin_Checked" Height="15" Width="50" />
+        <RadioButton x:Name="RadioButtonOutputCelcius" Content="Celcius" HorizontalAlignment="Left" Margin="175,111,0,0" VerticalAlignment="Top" GroupName="OutputScale" Checked="RadioButtonOutputCelcius_Checked" Height="15" Width="56" />
+        <RadioButton x:Name="RadioButtonOutputFahrenheit" Content="Fahrenheit" HorizontalAlignment="Left" Margin="175,137,0,0" VerticalAlignment="Top" GroupName="OutputScale" Checked="RadioButtonOutputFahrenheit_Checked" Height="15" Width="75" />
+        <RadioButton x:Name="RadioButtonOutputKelvin" Content="Kelvin" HorizontalAlignment="Left" Margin="175,163,0,0" VerticalAlignment="Top" GroupName="OutputScale" Checked="RadioButtonOutputKelvin_Checked" Height="15" Width="50" />
+        <Label x:Name="LabelOutput" Content="Output" HorizontalAlignment="Left" Margin="52,220,0,0" VerticalAlignment="Top" Height="26" Width="48" />
+        <TextBox x:Name="TextBoxOutput" HorizontalAlignment="Left" Height="23" Margin="100,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" />
+    </Grid>
+</Window>
